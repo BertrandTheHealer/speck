@@ -15,8 +15,10 @@ $(document).ready(function(){
     });
     $('#idinputbox').on('keydown', function (e) {
     if (e.which == 13) {
-        $('#xyz-data').load('https://cactus.nci.nih.gov/chemical/structure/'+$('#idinputbox').val().replace(' ', '%20')+'/file?format=xyz');
-        return false;
+	if($('#idinputbox').val() != ""){
+        	$('#xyz-data').load('https://cactus.nci.nih.gov/chemical/structure/'+$('#idinputbox').val().replace(' ', '%20')+'/file?format=xyz');
+	}
+	return false;
      }
 });
 });
@@ -42,6 +44,8 @@ $(document).ready(function(){
             <div id="controls-structure">
 
                 <h2>Samples</h2>
+		    
+		Enter structure identifier to fetch xyz file data<br>
 
                 <select id="controls-sample"></select>
                 
