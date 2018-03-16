@@ -48,6 +48,9 @@
                     document.getElementById('div_text').innerHTML = pText
                 }
             });
+            if($('#idinputbox').val() != ""){
+                loadStructure(xyz(document.getElementById("xyz-data").value)[0]);
+            }
         }
         $(document).ready(function(){
             hideSecureErrors();
