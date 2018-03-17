@@ -1,17 +1,16 @@
 # Speck
 
 Speck is a molecule renderer with the goal of producing figures that are as attractive as they are practical. Express your molecule clearly _and_ with style.
-
-## Differences from the original
-
-Dark theme
-Enter compound name to search for structure from an online database
-View short description of current structure
-Suppress notifications for some errors that don't affect the page's functionality
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/wwwtyro/speck/gh-pages/static/screenshots/demo-2.png">
 </p>
+
+## Differences from the original
+
+* Dark theme
+* Enter compound name to search for structure from an online database
+* View short description of current structure
+* Suppress notifications for some errors that don't affect the page's functionality
 
 ## Try it live
 
