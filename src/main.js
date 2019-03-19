@@ -65,7 +65,6 @@ function loadSample() {
 }
 
 window.onload = function() {
-
     renderContainer = document.getElementById("render-container");
 
     var imposterCanvas = document.getElementById("renderer-canvas");
@@ -453,7 +452,7 @@ window.onload = function() {
     }
 
     updateControls();
-
+    document.getElementById("loading").style.display = "none";
     function loop() {
 
         document.getElementById("atom-radius-text").innerHTML = Math.round(view.atomScale * 100) + "%";
