@@ -452,7 +452,6 @@ window.onload = function() {
     }
 
     updateControls();
-    document.getElementById("loading").style.display = "none";
     function loop() {
 
         document.getElementById("atom-radius-text").innerHTML = Math.round(view.atomScale * 100) + "%";

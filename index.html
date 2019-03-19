@@ -50,11 +50,14 @@
             });
             setInterval(hideSecureErrors,1000);
         });
+        window.addEventListener("load", function(){
+            document.getElementById("loading-page").style.display = "none";
+        });
         </script>
     </head>
 
     <body>
-        <div id="loading" style="position: absolute; background-color: #37474f; width: 100%;height: 100%;z-index:1"><div class="loader"></div></div>
+        <div id="loading-page" style="position: absolute; background-color: #37474f; width: 100%;height: 100%;z-index:1"><div class="loader"></div></div>
         <div id="render-container">
             <canvas id="renderer-canvas"></canvas>
         </div>
