@@ -1,17 +1,22 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
-
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     margin: 0px;
     -webkit-user-select: none;
-    background-color: #37474f;
-    color:white;
+    background-color: #2e2e2e;
+    color: white;
 }
 
 a {
-    color:#3bf;
+    color: #3bf;
+}
+
+.demo-header {
+    background-image: url(./images/header-bg.png);
+    background-size: cover;
+    background-position: center;
 }
 
 #render-container {
@@ -69,7 +74,7 @@ a {
     font-style: italic;
     color: #999;
     text-align: right;
-    font-family: 'Ubuntu Mono';    
+    font-family: 'Ubuntu Mono';
 }
 
 .control-width {
@@ -91,10 +96,12 @@ button {
     outline: none;
 }
 
+
 /* The download "button" must be an <a> tag, so I think we
  * need a seperate class for this element alone. Also, we
  * need to make the link black and not underlined.        
  */
+
 a.button {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -142,22 +149,36 @@ p {
 }
 
 .loader {
-    border: 16px solid #2c393f;border-radius: 50%;border-top: 16px solid #3498db;width: 120px;
+    border: 16px solid #2c393f;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
     height: 120px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
     animation: spin 2s linear infinite;
     position: relative;
     top: calc(50% - 60px);
     margin: 0 auto;
-  }
-  
-  /* Safari */
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+}
+
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
