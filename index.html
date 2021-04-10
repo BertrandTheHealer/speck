@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-indigo.min.css" />
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./styles.css">
     <script>
         function hideSecureErrors() {
             if (document.getElementById("error-text").innerText.includes("5209")) {
@@ -321,9 +322,14 @@
         <br>
         <button id="close-error">Continue</button>
     </div>
-    <a href="https://max-davy.github.io">
-        <img src="https://raw.githubusercontent.com/google/material-design-icons/master/action/2x_web/ic_home_white_48dp.png" style="position: fixed; right: 0px; top: 0px;width: 50px;padding: 10px 20px;">
-    </a>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <a role="button" tabindex="0" class="mdl-layout__drawer-button" href="https://max-davy.github.io"><i class="material-icons">home</i></a>
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout__title">Speck</span>
+            </div>
+        </header>
+    </div>
 </body>
 
 </html>
